@@ -1,0 +1,170 @@
+/* Whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+/* Header */
+
+header {
+  font-family: "Architects Daughter", cursive;
+  background-color: #a0c8c7;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  border-bottom: 0.2rem solid #1f3d3d;
+  box-shadow: 0 0.5rem 1rem -0.5rem #1f3d3d;
+}
+
+.name {
+  float: left;
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #1f3d3d;
+}
+
+nav {
+  float: right;
+  margin: 1.5rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-size: 1.3rem;
+  color: #1f3d3d;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.page {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(187, 171, 207);
+  box-shadow: 5px 5px 5px rgb(85, 65, 109);
+}
+
+.drop {
+  display: none;
+  float: right;
+  color: #313d3d;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+.drop:hover {
+  color: white;
+  background-color: rgb(187, 171, 207);
+  box-shadow: 5px 5px 5px rgb(85, 65, 109);
+}
+
+/* Main */
+
+main {
+  flex: 1;
+  height: fit-content;
+  margin: 0 15%;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313d3d93;
+  margin: 1rem 0 1rem -10rem;
+  flex: 1;
+  align-self: flex-start;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 5px 5px #a0c8c7;
+  display: flex;
+}
+
+.card a {
+  float: right;
+  align-self: center;
+}
+
+.card img {
+  height: 10rem;
+  width: 10rem;
+  border: 0.1rem outset #a0c8c7;
+  box-shadow: 5px 5px 5px #a0c8c7;
+  margin: 1rem;
+}
+
+.card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313d3d93;
+  margin: 1rem 0 0 1rem;
+}
+
+.card p {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.5rem;
+  color: #313d3d;
+  margin: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #a0c8c7;
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-top: 0.2rem solid #1f3d3d;
+  box-shadow: 0 -0.5rem 1rem -0.5rem #1f3d3d;
+}
+
+.social {
+  height: 3rem;
+  margin: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+  header nav {
+    display: none;
+  }
+  header .drop {
+    display: flex;
+  }
+  main {
+    margin: 0;
+  }
+  main h1 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .card a img {
+    height: 5rem;
+    width: 5rem;
+  }
+}

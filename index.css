@@ -1,0 +1,183 @@
+/* Whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+/* Header */
+
+header {
+  font-family: "Architects Daughter", cursive;
+  background-color: #A0C8C7;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  border-bottom: 0.2rem solid #1F3D3D;
+  box-shadow: 0 0.5rem 1rem -0.5rem #1F3D3D;
+}
+
+.name {
+  float: left;
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #1F3D3D;
+}
+
+nav {
+  float: right;
+  margin: 1.5rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-size: 1.3rem;
+  color: #1F3D3D;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.page {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(187, 171, 207);
+  box-shadow: 5px 5px 5px rgb(85, 65, 109);
+}
+
+.drop {
+  display: none;
+  float: right;
+  color: #313D3D;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+.drop:hover {
+  color: white;
+  background-color: rgb(187, 171, 207);
+  box-shadow: 5px 5px 5px rgb(85, 65, 109);
+}
+
+/* Main */
+main {
+  flex: 1;
+  height: 100vh;
+  margin: 0 15%;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313d3d93;
+  margin: 2rem 0;
+  justify-self: flex-start;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  font-family: "Architects Daughter", cursive;
+  color: #1F3D3D;
+}
+
+.full-quote {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quote {
+  text-align: center;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    gold,
+    green,
+    blue,
+    purple
+  );
+  -webkit-background-clip: text;
+  color: black;
+  color: transparent;
+}
+
+.quote strong {
+  font-weight: 1000;
+}
+
+.alan {
+  align-self: flex-end;
+  color: #1F3D3D;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #A0C8C7;
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-top: 0.2rem solid #1F3D3D;
+  box-shadow: 0 -0.5rem 1rem -0.5rem #1F3D3D;
+}
+
+.social {
+  height: 3rem;
+  margin: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header .drop {
+    display: flex;
+  }
+  main {
+    margin: 0;
+  }
+  .full-quote {
+    width: 100%;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main h2 {
+    font-size: 1rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .alan {
+    font-size: 1rem;
+  }
+}
